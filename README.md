@@ -28,9 +28,11 @@
 
 ## 2. Настройка файла config.js
 
+Расположение относительно docker-compose.yaml ./config/config.js
+
 ```js
 window.config = {};
-window.config.BACKEND_URL = 'http://YOUR_BACHEND_URL:2058/api/v1';
+window.config.BACKEND_URL = 'http://YOUR_BACKEND_URL:2058/api/v1';
 ```
 
 ## 3. Запуск
