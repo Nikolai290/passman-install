@@ -40,7 +40,7 @@ services:
       - ${BACKEND_PORT}:5000
 
   frontend:
-    image: nikolai290/passman-web:1.0-release
+    image: nikolai290/passman-web:latest
     restart: always
     ports:
       - ${FRONTEND_PORT}:80
