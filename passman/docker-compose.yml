@@ -13,7 +13,7 @@ services:
       - ${DB_PORT}:5432
 
   backend:
-    image: nikolai290/passman-back:1.0-release
+    image: nikolai290/passman-back:latest
     restart: always
     environment:
       FRONTEND_URL: ${FRONTEND_URL}
