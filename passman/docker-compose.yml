@@ -16,10 +16,13 @@ services:
     image: nikolai290/passman-back:latest
     restart: always
     environment:
-      FRONTEND_URL: ${FRONTEND_URL}
-      LOCAL_IP: ${LOCAL_IP}
       ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
       ASPNETCORE_URLS: http://+:5000
+
+      # USE FOR SEND IN EMAIL ADN USE IN CORS POLICY BY DEFAULT ALSO
+      FRONTEND_URL: ${FRONTEND_URL}
+      # ADVANCED CORS POLICY - NOT NECESSARILY
+      # format: http://domain:port;http://domain:port;
 
       DB_HOST: db
       DB_PORT: 5432
